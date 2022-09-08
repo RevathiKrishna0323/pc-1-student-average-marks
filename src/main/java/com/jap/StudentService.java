@@ -31,10 +31,8 @@ public class StudentService {
         //Create a TreeSet object
         Set<String>Student = new TreeSet<>();
 
-
-
         //Use Iterator object of type <Student> to iterate through the studentSet
-
+            Iterator<String> iterator = Student.iterator();
         //get all the name and add it inside the TreeSet object
 
       //return the TreeSet object;
