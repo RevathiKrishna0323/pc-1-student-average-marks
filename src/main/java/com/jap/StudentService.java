@@ -15,7 +15,15 @@ public class StudentService {
 
         //create HashSet object and add all the students object inside it
         Set<Student>Student = new HashSet<>();
+        Student.add(student1);
+        Student.add(student2);
+        Student.add(student3);
+        Student.add(student4);
+        Student.add(student5);
+        Student.add(student6);
+
         //return the HashSet object
+
 
 
 
