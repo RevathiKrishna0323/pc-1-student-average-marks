@@ -6,10 +6,17 @@ public class StudentService {
 
     public static Set<Student> getAllStudentData(){
         //create six student object by calling Student class parameterized constructor
+        Student student1 = new Student("Hema",101,567);
+        Student student2 = new Student("Ajay",1084,555);
+        Student student3 = new Student("Mom",114,456);
+        Student student4 = new Student("Chaitu",132,678);
+        Student student5 = new Student("Revathi",116,878);
+        Student student6 = new Student("Yasree",117,968);
 
         //create HashSet object and add all the students object inside it
-
+        Set<Student>Student = new HashSet<>();
         //return the HashSet object
+
 
 
         return null;
