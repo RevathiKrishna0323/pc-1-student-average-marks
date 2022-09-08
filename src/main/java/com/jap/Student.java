@@ -32,9 +32,14 @@ public class Student {
         this.totalMarks = totalMarks;
     }
 
-    //complete the parameterized constructor
-    public Student(String name, int rollNo, int totalMarks) {
 
+    //complete the parameterized constructor
+
+    public Student(String name, int rollNo, int totalMarks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.totalMarks = totalMarks;
     }
+
 
 }
