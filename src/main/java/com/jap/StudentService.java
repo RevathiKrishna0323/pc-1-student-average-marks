@@ -32,15 +32,16 @@ public class StudentService {
         Set<String>Student = new TreeSet<>();
 
         //Use Iterator object of type <Student> to iterate through the studentSet
-            Iterator<String> iterator = Student.iterator();
+        Iterator<String> iterator = Student.iterator();
         //get all the name and add it inside the TreeSet object
-
-      //return the TreeSet object;
-        return null;
+        System.out.println("Names list:  "  + Student.iterator());
+        //return the TreeSet object;
+        return Student;
     }
 
     public static Map<String,Integer> calculateAverage(Set<Student> studentSet){
         //create a HashMap object of type <String,Integer>
+        Map<Integer,String> newMap = new HashMap<>();
 
         //Use Iterator object of type <Student>to iterate through the studentSet
 
