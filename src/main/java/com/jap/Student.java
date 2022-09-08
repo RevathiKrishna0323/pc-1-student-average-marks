@@ -40,6 +40,14 @@ public class Student {
         this.rollNo = rollNo;
         this.totalMarks = totalMarks;
     }
+    // override a to string() method
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", rollNo=" + rollNo +
+                ", totalMarks=" + totalMarks +
+                '}';
+    }
 }
