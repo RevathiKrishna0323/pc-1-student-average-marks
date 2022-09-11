@@ -8,7 +8,13 @@ public class Student {
 
     //create getter and setter for all the above attributes
 
-    public Integer getName() {
+    public Student(String name, int rollNo, int totalMarks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.totalMarks = totalMarks;
+    }
+
+    public String getName() {
         return name;
     }
 
@@ -24,30 +30,20 @@ public class Student {
         this.rollNo = rollNo;
     }
 
-    public String getTotalMarks() {
+    public int getTotalMarks() {
         return totalMarks;
-    }
-
-    public void setTotalMarks(int totalMarks) {
-        this.totalMarks = totalMarks;
     }
 
 
     //complete the parameterized constructor
 
-    public Student(String name, int rollNo, int totalMarks) {
-        this.name = name;
-        this.rollNo = rollNo;
+    public void setTotalMarks(int totalMarks) {
         this.totalMarks = totalMarks;
     }
     // override a to string() method
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", rollNo=" + rollNo +
-                ", totalMarks=" + totalMarks +
-                '}';
+        return "Student{" + "name='" + name + '\'' + ", rollNo=" + rollNo + ", totalMarks=" + totalMarks + '}';
     }
 }
