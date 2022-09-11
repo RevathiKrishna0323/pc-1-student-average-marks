@@ -4,17 +4,17 @@ import java.util.*;
 
 public class StudentService {
 
-    public static Set<Student> getAllStudentData(){
+    public static Set<Student> getAllStudentData() {
         //create six student object by calling Student class parameterized constructor
-        Student student1 = new Student("Hema",101,567);
-        Student student2 = new Student("Ajay",1084,555);
-        Student student3 = new Student("Mom",114,456);
-        Student student4 = new Student("Chaitu",132,678);
-        Student student5 = new Student("Revathi",116,878);
-        Student student6 = new Student("Yasree",117,968);
+        Student student1 = new Student("Hema", 101, 567);
+        Student student2 = new Student("Ajay", 1084, 555);
+        Student student3 = new Student("Mom", 114, 456);
+        Student student4 = new Student("Chaitu", 132, 678);
+        Student student5 = new Student("Revathi", 116, 878);
+        Student student6 = new Student("Yasree", 117, 968);
 
         //create HashSet object and add all the students object inside it
-        Set<Student>Student = new HashSet<>();
+        Set<Student> Student = new HashSet<>();
         Student.add(student1);
         Student.add(student2);
         Student.add(student3);
@@ -23,29 +23,29 @@ public class StudentService {
         Student.add(student6);
 
         //return the HashSet object
-            return Student;
+        return Student;
     }
 
 
-    public static Set<String> getAllStudentNameInSorted(Set<Student> studentSet){
+    public static Set<String> getAllStudentNameInSorted(Set<Student> studentSet) {
         //Create a TreeSet object
-        Set<String>Student = new TreeSet<>();
+        Set<String> Student = new TreeSet<>();
         //Use Iterator object of type <Student> to iterate through the studentSet
         Iterator<Student> iterator = studentSet.iterator();
         //get all the name and add it inside the TreeSet object
-        System.out.println("Names list:  "  + Student.iterator());
+        System.out.println("Names list:  " + Student.iterator());
         //return the TreeSet object;
         return Student;
     }
 
-    public static Map<Integer, String> calculateAverage(Set<Student> studentSet){
+    public static Map<Integer, String> calculateAverage(Set<Student> studentSet) {
         //create a HashMap object of type <String,Integer>
-        Map<Integer,String> newMap = new HashMap<>();
+        Map<Integer, String> newMap = new HashMap<>();
 
         //Use Iterator object of type <Student>to iterate through the studentSet
-        Iterator <Student> iterator = studentSet.iterator();
+        Iterator<Student> iterator = studentSet.iterator();
         //retrieve the Student object from the iterator
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             Student object = iterator.next();
             newMap.put(object.getName(), object.getTotalMarks())
         }
@@ -54,7 +54,7 @@ public class StudentService {
         //add the student name and average marks in the HashMap object created in the
         //first line and return the map
 
-           return newMap;
+        return newMap;
 
     }
 
