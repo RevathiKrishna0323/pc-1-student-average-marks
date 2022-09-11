@@ -38,7 +38,7 @@ public class StudentService {
         return Student;
     }
 
-    public static Map<String,Integer> calculateAverage(Set<Student> studentSet){
+    public static Map<Integer, String> calculateAverage(Set<Student> studentSet){
         //create a HashMap object of type <String,Integer>
         Map<Integer,String> newMap = new HashMap<>();
 
@@ -51,11 +51,10 @@ public class StudentService {
         }
         //Use getter method to get TotalMarks of each student. calculate the average
 
-
         //add the student name and average marks in the HashMap object created in the
         //first line and return the map
 
-           return null;
+           return newMap;
 
     }
 
