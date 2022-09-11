@@ -30,9 +30,8 @@ public class StudentService {
     public static Set<String> getAllStudentNameInSorted(Set<Student> studentSet){
         //Create a TreeSet object
         Set<String>Student = new TreeSet<>();
-
         //Use Iterator object of type <Student> to iterate through the studentSet
-        Iterator<String> iterator = Student.iterator();
+        Iterator<Student> iterator = studentSet.iterator();
         //get all the name and add it inside the TreeSet object
         System.out.println("Names list:  "  + Student.iterator());
         //return the TreeSet object;
@@ -43,9 +42,8 @@ public class StudentService {
         //create a HashMap object of type <String,Integer>
         Map<Integer,String> newMap = new HashMap<>();
 
-
         //Use Iterator object of type <Student>to iterate through the studentSet
-
+        Iterator <Student> iterator = studentSet.iterator();
         //retrieve the Student object from the iterator
 
         //Use getter method to get TotalMarks of each student. calculate the average
@@ -60,6 +58,7 @@ public class StudentService {
     public static void main(String[] args) {
         Set studentName = getAllStudentData();
         System.out.println(getAllStudentNameInSorted(studentName));
+
         System.out.println(calculateAverage(studentName));
     }
 
