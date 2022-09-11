@@ -1,5 +1,7 @@
 package com.jap;
 
+import java.util.Objects;
+
 public class Student {
 
     private String name;
@@ -45,5 +47,18 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" + "name='" + name + '\'' + ", rollNo=" + rollNo + ", totalMarks=" + totalMarks + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return rollNo == student.rollNo && totalMarks == student.totalMarks && Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, rollNo, totalMarks);
     }
 }
