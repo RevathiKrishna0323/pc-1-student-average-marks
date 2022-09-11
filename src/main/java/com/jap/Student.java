@@ -8,7 +8,7 @@ public class Student {
 
     //create getter and setter for all the above attributes
 
-    public String getName() {
+    public Integer getName() {
         return name;
     }
 
@@ -24,7 +24,7 @@ public class Student {
         this.rollNo = rollNo;
     }
 
-    public int getTotalMarks() {
+    public String getTotalMarks() {
         return totalMarks;
     }
 

@@ -45,8 +45,12 @@ public class StudentService {
         //Use Iterator object of type <Student>to iterate through the studentSet
         Iterator <Student> iterator = studentSet.iterator();
         //retrieve the Student object from the iterator
-
+        while(iterator.hasNext()){
+            Student object = iterator.next();
+            newMap.put(object.getName(), object.getTotalMarks())
+        }
         //Use getter method to get TotalMarks of each student. calculate the average
+
 
         //add the student name and average marks in the HashMap object created in the
         //first line and return the map
