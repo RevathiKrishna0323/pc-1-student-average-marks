@@ -47,7 +47,7 @@ public class StudentService {
         //retrieve the Student object from the iterator
         while (iterator.hasNext()) {
             Student object = iterator.next();
-            newMap.put(object.getName(), object.getTotalMarks())
+            newMap.put(object.getName(), object.getTotalMarks());
         }
         //Use getter method to get TotalMarks of each student. calculate the average
 
